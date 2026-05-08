@@ -94,7 +94,7 @@ const Contact = () => {
             <a href="https://linkedin.com/in/Dulathmi-Hettige" target="_blank" rel="noreferrer" className="social-circle linkedin-circle" title="Connect on LinkedIn">
               <Linkedin size={24} fill="currentColor" />
             </a>
-            <a href="https://github.com/DulathmiH" target="_blank" rel="noreferrer" className="social-circle" title="View my Code">
+            <a href="https://github.com/Dulathmi" target="_blank" rel="noreferrer" className="social-circle" title="View my Code">
               <Github size={24} fill="currentColor" />
             </a>
             <a href="mailto:sadesnadulathmii@gmail.com" className="social-circle" title="Send an Email">
