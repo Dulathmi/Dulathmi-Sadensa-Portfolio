@@ -9,7 +9,7 @@ const CVSection = () => {
         <div className="resume-preview-col">
           <div className="resume-card-mock">
             <div className="resume-glow" />
-            
+
             <div className="resume-card-inner">
               <FileText size={80} color="var(--accent-orange)" style={{ opacity: 0.8 }} />
               <div className="resume-filename">
@@ -31,7 +31,7 @@ const CVSection = () => {
           <p className="resume-desc">
             I am currently open to internship opportunities, collaborative projects, and entry-level positions in Software Engineering & DevOps. If you're looking for a highly motivated developer who loves building robust systems, we should talk!
           </p>
-          
+
           <a href="/Dulathmi_Cv_final.pdf" download className="btn-primary" style={{ display: 'inline-flex', gap: '0.5rem', alignItems: 'center' }}>
             <Download size={20} />
             Download Full CV

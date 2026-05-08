@@ -92,7 +92,7 @@ function App() {
               <a href="#contact" className={`nav-link ${activeTab === 'contact' ? 'active' : ''}`}>Contact</a>
             </li>
             <li>
-              <a href="mailto:sadesnadulathmii@gmail.com" className="btn-primary box-glow" style={{ padding: '0.4rem 1.2rem', fontSize: '0.9rem' }}>Hire Me</a>
+              <a href="#contact" className="btn-primary box-glow" style={{ padding: '0.4rem 1.2rem', fontSize: '0.9rem' }}>Hire Me</a>
             </li>
           </ul>
         </div>

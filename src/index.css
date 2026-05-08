@@ -107,8 +107,8 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 1px solid var(--accent-yellow);
   color: var(--accent-yellow);
@@ -117,7 +117,13 @@ img {
 }
 .social-circle:hover {
   background: var(--accent-yellow);
-  color: #fff;
+  color: #000;
+}
+
+.linkedin-circle:hover {
+  background: var(--accent-yellow);
+  color: #000;
+  box-shadow: 0 0 20px rgba(229, 255, 0, 0.8);
 }
 
 
@@ -622,7 +628,7 @@ img {
 }
 
 .form-input::placeholder {
-  color: #5b5b75;
+  color: #e0e0e0;
 }
 
 .form-input:focus {
@@ -908,5 +914,41 @@ img {
   color: var(--accent-yellow);
 }
 
+.project-highlight-pink {
+  border-color: #FF69B4 !important;
+  box-shadow: 0 0 20px #FF69B4 !important;
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
 
+.highlight-project {
+  animation: project-highlight 2.5s ease-out;
+}
 
+@keyframes project-highlight {
+  0% { 
+    transform: scale(1.03); 
+    box-shadow: 0 0 40px var(--accent-yellow); 
+    border-color: var(--accent-yellow);
+    background-color: rgba(229, 255, 0, 0.1);
+  }
+  100% { 
+    transform: scale(1); 
+    box-shadow: none; 
+    border-color: transparent;
+    background-color: var(--bg-surface);
+  }
+}
+
+.stat-link {
+  display: block;
+  cursor: pointer;
+  color: inherit;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.stat-link:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 15px rgba(229, 255, 0, 0.4));
+}

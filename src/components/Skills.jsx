@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 const coreSkills = [
-  { name: 'Java (OOP)', level: 75 },
-  { name: 'Full-Stack Development', level: 72 },
-  { name: 'Database Management', level: 70 },
-  { name: 'UI/UX (Figma)', level: 68 },
+  { name: 'Java (OOP)', level: 75, subLabel: 'Core Competency' },
+  { name: 'Full-Stack Development', level: 72, subLabel: 'Core Competency' },
+  { name: 'Database Management', level: 70, subLabel: 'Active Growth' },
+  { name: 'UI/UX (Figma)', level: 68, subLabel: 'Active Growth' },
 ];
 
 const categorySkills = [
@@ -14,7 +14,7 @@ const categorySkills = [
   { category: 'Design', skills: ['Figma'] },
 ];
 
-const CircularProgress = ({ value, label }) => {
+const CircularProgress = ({ value, label, subLabel }) => {
   const [offset, setOffset] = useState(100);
   const radius = 16;
   const circumference = 2 * Math.PI * radius;
@@ -48,6 +48,11 @@ const CircularProgress = ({ value, label }) => {
         </svg>
       </div>
       <div className="circular-label">{label}</div>
+      {subLabel && (
+        <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', marginTop: '0.25rem', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: 600 }}>
+          {subLabel}
+        </div>
+      )}
     </div>
   );
 };
@@ -56,13 +61,13 @@ const Skills = () => {
   return (
     <section className="section-container" id="skills">
       <div className="section-header reveal" style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <div className="hero-subtitle text-yellow">■ TECHNICAL METRICS</div>
+        <div className="hero-subtitle text-yellow">■ TECHNICAL PROFICIENCY</div>
         <h2 style={{ fontSize: '3rem', marginTop: '1rem' }}>My core skills</h2>
       </div>
 
       <div className="circular-progress-container reveal" style={{ justifyContent: 'center' }}>
         {coreSkills.map((skill, index) => (
-          <CircularProgress key={index} value={skill.level} label={skill.name} />
+          <CircularProgress key={index} value={skill.level} label={skill.name} subLabel={skill.subLabel} />
         ))}
       </div>
 

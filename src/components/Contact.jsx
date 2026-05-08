@@ -58,24 +58,47 @@ const Contact = () => {
           
           <div className="form-submit-wrapper" style={{ marginTop: '1rem', justifyContent: 'center' }}>
             <button type="submit" className="btn-primary box-glow" style={{ width: '100%' }}>
-              Stay Connected
+              Get in Touch
             </button>
           </div>
         </form>
 
-        <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
-          <div style={{ color: '#e0e0e0', marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+        <div style={{ 
+          margin: '4rem 0', 
+          padding: '3rem 0', 
+          borderTop: '1px solid rgba(255,255,255,0.08)', 
+          borderBottom: '1px solid rgba(255,255,255,0.08)', 
+          textAlign: 'center' 
+        }}>
+          <p style={{ 
+            fontSize: '1.35rem', 
+            fontStyle: 'italic', 
+            color: '#e0e0e0', 
+            lineHeight: '1.8', 
+            fontWeight: 300,
+            maxWidth: '95%',
+            margin: '0 auto'
+          }}>
+            "I believe that technology should be accessible and <span style={{ color: 'var(--accent-yellow)', fontWeight: 600 }}>impactful</span>. My goal is to build software that doesn't just work, but actually improves lives."
+          </p>
+        </div>
+
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ color: '#e0e0e0', marginBottom: '3rem', fontSize: '1rem', fontWeight: 500 }}>
             sadesnadulathmii@gmail.com
           </div>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-            <a href="https://linkedin.com/in/Dulathmi-Hettige" target="_blank" rel="noreferrer" className="social-circle">
-              <Linkedin size={20} fill="currentColor" />
+          <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', letterSpacing: '3px', textTransform: 'uppercase', fontWeight: 600, marginBottom: '1.5rem' }}>
+            Find me on
+          </div>
+          <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
+            <a href="https://linkedin.com/in/Dulathmi-Hettige" target="_blank" rel="noreferrer" className="social-circle linkedin-circle" title="Connect on LinkedIn">
+              <Linkedin size={24} fill="currentColor" />
             </a>
-            <a href="https://github.com/DulathmiH" target="_blank" rel="noreferrer" className="social-circle">
-              <Github size={20} fill="currentColor" />
+            <a href="https://github.com/DulathmiH" target="_blank" rel="noreferrer" className="social-circle" title="View my Code">
+              <Github size={24} fill="currentColor" />
             </a>
-            <a href="mailto:sadesnadulathmii@gmail.com" className="social-circle">
-              <Mail size={20} />
+            <a href="mailto:sadesnadulathmii@gmail.com" className="social-circle" title="Send an Email">
+              <Mail size={24} />
             </a>
           </div>
         </div>

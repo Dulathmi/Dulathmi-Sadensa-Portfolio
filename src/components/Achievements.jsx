@@ -1,16 +1,23 @@
 import React from 'react';
-import { Award, Trophy, Star } from 'lucide-react';
+import { Award, Trophy, Star, Medal } from 'lucide-react';
 
 const achievementsData = [
   {
     title: 'IEEExtreme 19.0',
     description: 'Participated in the global 24-hour programming competition, solving complex algorithmic challenges.',
+    highlight: 'Impact: Collaborated with team Nexora2025 to solve high-concurrency algorithmic problems in a global 24-hour marathon.',
     icon: <Trophy size={32} />
   },
   {
     title: 'IEEE Global Hackathon',
     description: 'Collaborated with international teams to build innovative technical solutions within a tight deadline.',
     icon: <Award size={32} />
+  },
+  {
+    title: 'Academic Merit Award — IIT',
+    description: 'Awarded for outstanding academic performance and achieving Merit standing during the University Foundation Programme at the Informatics Institute of Technology.',
+    highlight: 'Recognized for maintaining excellence across core computing and mathematics modules.',
+    icon: <Medal size={32} />
   },
   {
     title: 'Vertex 2025',
@@ -38,6 +45,11 @@ const Achievements = () => {
             </div>
             <h3 className="service-title">{achievement.title}</h3>
             <p className="service-desc">{achievement.description}</p>
+            {achievement.highlight && (
+              <p className="service-desc" style={{ color: 'var(--accent-yellow)', marginTop: '0.5rem', fontWeight: 600 }}>
+                {achievement.highlight}
+              </p>
+            )}
           </div>
         ))}
       </div>

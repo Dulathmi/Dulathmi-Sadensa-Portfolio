@@ -111,7 +111,9 @@ const ProjectShowcase = () => {
             className="flex flex-wrap gap-4"
           >
             <a 
-              href="https://github.com/Dulathmi" 
+              href="https://github.com/BigH3ro6/drishti-final" 
+              target="_blank" 
+              rel="noreferrer"
               className="flex items-center gap-2 px-8 py-3 glass-card border-accent-yellow bg-accent-yellow/10 text-accent-yellow font-heading text-sm hover:bg-accent-yellow hover:text-white transition-all duration-300"
             >
               <Github size={18} /> View Source

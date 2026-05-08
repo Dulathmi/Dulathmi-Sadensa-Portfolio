@@ -34,7 +34,7 @@ const Hero = () => {
             <a href="/Dulathmi_Cv_final.pdf" target="_blank" rel="noreferrer" className="btn-primary box-glow">
               <Download size={20} /> Download CV
             </a>
-            <a href="https://github.com/DulathmiH" target="_blank" rel="noreferrer" className="btn-secondary">
+            <a href="https://github.com/Dulathmi" target="_blank" rel="noreferrer" className="btn-secondary">
               <Github size={20} /> View GitHub
             </a>
           </div>
