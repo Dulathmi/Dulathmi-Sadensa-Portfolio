@@ -1,21 +1,21 @@
 import React from 'react';
-import { Server, Code, Figma, Cloud, Database, Cpu, ArrowRight } from 'lucide-react';
+import { Server, Code, Figma, Cloud, Database, Cpu, ArrowRight, Smartphone } from 'lucide-react';
 
 const servicesData = [
   {
     title: 'Backend Development',
-    description: 'Building scalable Java & Python systems with clean architecture.',
+    description: 'Building scalable Java & Python systems with a focus on logic.',
     icon: <Server size={32} />
   },
   {
     title: 'API Architecture',
-    description: 'Designing RESTful endpoints with JAX-RS and Flask.',
+    description: 'Designing RESTful endpoints using Flask and JAX-RS.',
     icon: <Code size={32} />
   },
   {
-    title: 'App Design',
-    description: 'Creating interactive prototypes and UI flows in Figma.',
-    icon: <Figma size={32} />
+    title: 'Mobile App Development',
+    description: 'Crafting cross-platform experiences with Flutter, optimized for real-time data.',
+    icon: <Smartphone size={32} />
   },
   {
     title: 'Cloud & DevOps',
@@ -24,7 +24,7 @@ const servicesData = [
   },
   {
     title: 'Database Management',
-    description: 'Firebase Firestore, SQL integrations, schema design.',
+    description: 'Integrating SQL and NoSQL (Firestore) systems based on project requirements.',
     icon: <Database size={32} />
   },
   {

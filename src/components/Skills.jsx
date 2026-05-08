@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
 const coreSkills = [
-  { name: 'Java (OOP)', level: 90 },
-  { name: 'Full-Stack Development (React/Next.js)', level: 85 },
-  { name: 'Database Management (SQL/Supabase)', level: 88 },
-  { name: 'UI/UX (Figma)', level: 80 },
+  { name: 'Java (OOP)', level: 75 },
+  { name: 'Full-Stack Development', level: 72 },
+  { name: 'Database Management', level: 70 },
+  { name: 'UI/UX (Figma)', level: 68 },
 ];
 
 const categorySkills = [
-  { category: 'Frontend', skills: ['React', 'Next.js 14'] },
-  { category: 'Backend', skills: ['Java', 'Supabase', 'PostgreSQL'] },
+  { category: 'Frontend', skills: ['React', 'Next.js 14', 'Flutter', 'Dart'] },
+  { category: 'Backend', skills: ['Java', 'Python', 'Flask', 'Supabase'] },
+  { category: 'Database', skills: ['PostgreSQL', 'Firebase (NoSQL)'] },
   { category: 'Design', skills: ['Figma'] },
 ];
 
@@ -67,7 +68,7 @@ const Skills = () => {
 
       <div className="reveal" style={{ marginTop: '5rem', maxWidth: '800px', margin: '5rem auto 0' }}>
         <div className="hero-subtitle text-yellow" style={{ marginBottom: '2rem', textAlign: 'center' }}>■ TECH STACK</div>
-        <div className="hero-grid" style={{ gap: '2rem', gridTemplateColumns: 'repeat(3, 1fr)' }}>
+        <div className="hero-grid" style={{ gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
           {categorySkills.map((cat, index) => (
             <div key={index} className="service-card" style={{ padding: '2rem' }}>
               <h3 className="service-title" style={{ textAlign: 'center', marginBottom: '1.5rem', color: '#fff' }}>{cat.category}</h3>

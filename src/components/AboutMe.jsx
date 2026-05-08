@@ -21,10 +21,10 @@ const AboutMe = () => {
         {/* Right Column */}
         <div style={{ paddingTop: '2rem' }}>
           <p className="hero-text" style={{ fontSize: '1.1rem', color: '#e0e0e0', marginBottom: '2rem' }}>
-            I’m a Computer Science undergraduate at IIT specializing in building practical applications with Java and modern web technologies like React and Next.js.
+            I’m a Computer Science undergraduate at IIT specializing in building practical applications.
           </p>
           <p className="hero-text" style={{ fontSize: '1.1rem', color: '#a3a3a3' }}>
-            My focus is on creating functional, user-centered tools backed by secure cloud infrastructure.
+            From Java-based enterprise systems to Python-driven assistive tools like Drishti, I focus on creating functional, user-centered tools backed by secure cloud infrastructure.
           </p>
 
           <div className="pill-tags">
