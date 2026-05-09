@@ -63,14 +63,14 @@ function App() {
       {/* ════ NAVBAR ════ */}
       <nav className="top-nav">
         <div className="nav-container">
-          <div
+          <a
+            href="#home"
             className="brand-logo"
-            style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}
           >
             <div style={{ backgroundColor: 'var(--accent-yellow)', color: '#000', width: '32px', height: '32px', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>D</div>
             Dulathmi.
-          </div>
+          </a>
 
           <ul className="nav-links">
             <li>
