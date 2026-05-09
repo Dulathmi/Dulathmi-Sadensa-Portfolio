@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
 
           <div className="hero-actions" style={{ marginTop: '2.5rem' }}>
-            <a href="/Dulathmi_Cv_final.pdf" target="_blank" rel="noreferrer" className="btn-primary box-glow">
+            <a href="/Dulathmi_Sadesna_CV_01.pdf" target="_blank" rel="noreferrer" className="btn-primary box-glow">
               <Download size={20} /> Download CV
             </a>
             <a href="https://github.com/Dulathmi" target="_blank" rel="noreferrer" className="btn-secondary">
